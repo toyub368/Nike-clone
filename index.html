@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Nike - Athletic Shoes, Sportswear & Accessories | Official Store</title>
+    <meta name="title" content="Nike - Athletic Shoes, Sportswear & Accessories | Official Store">
+    <meta name="description" content="Shop Nike's official store for athletic shoes, sportswear, and accessories. Free shipping for Nike Members. Discover the latest innovations in sports gear.">
+    <meta name="keywords" content="Nike, shoes, sportswear, athletic wear, running shoes, Nike Air Max, Nike ZoomX, Nike Air Force 1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nike.com/">
+    <meta property="og:title" content="Nike - Athletic Shoes, Sportswear & Accessories | Official Store">
+    <meta property="og:description" content="Shop Nike's official store for athletic shoes, sportswear, and accessories. Free shipping for Nike Members. Discover the latest innovations in sports gear.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.nike.com/">
+    <meta property="twitter:title" content="Nike - Athletic Shoes, Sportswear & Accessories | Official Store">
+    <meta property="twitter:description" content="Shop Nike's official store for athletic shoes, sportswear, and accessories. Free shipping for Nike Members. Discover the latest innovations in sports gear.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.nike.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80" as="image">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        .announcement {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .navbar {
+            background: white;
+            padding: 0 48px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #111;
+            font-size: 16px;
+            padding: 8px 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #00a651;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .login-link {
+            text-decoration: none;
+            color: #111;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .login-link:hover {
+            background: #00a651;
+            color: white;
+            border-color: #00a651;
+        }
+
+        .hero {
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content h1 {
+            font-size: 64px;
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+
+        .cta-button {
+            background: white;
+            color: black;
+            padding: 16px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #00a651;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .featured {
+            padding: 60px 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .featured h2 {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .product-card {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 16px 0;
+        }
+
+        .product-info h3 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .product-info p {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            background: #111;
+            color: white;
+            padding: 60px 48px 32px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-column h4 {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #7e7e7e;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-icon {
+            color: white;
+            text-decoration: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #7e7e7e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: #00a651;
+            transform: translateY(-2px);
+        }
+
+        .social-icon i {
+            font-size: 16px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #222;
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            color: #7e7e7e;
+            font-size: 12px;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-bottom-links a {
+            color: #7e7e7e;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-links a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 0 16px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+            }
+
+            .featured {
+                padding: 32px 16px;
+            }
+
+            .footer {
+                padding: 32px 16px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nike",
+      "url": "https://www.nike.com",
+      "logo": "https://www.nike.com/favicon.png",
+      "sameAs": [
+        "https://www.facebook.com/nike",
+        "https://twitter.com/nike",
+        "https://www.instagram.com/nike",
+        "https://www.youtube.com/nike"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Nike Official Store",
+      "url": "https://www.nike.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.nike.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="announcement" role="banner">
+            Free Shipping for Nike Members
+        </div>
+
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo" role="img" aria-label="Nike Logo">NIKE</div>
+                <ul class="nav-links">
+                    
+                    <li><a href="men.html" title="Men's Collection">Men</a></li>
+
+                    <li><a href="kid.html" title="Kids's Collection">Kid</a></li>
+                    
+                    
+                    
+                    <li><a href="login.html" class="login-link" title="Login to your account">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" role="banner">
+            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80" 
+                 alt="Nike Running Shoes Collection" 
+                 loading="eager"
+                 width="2400"
+                 height="1600">
+            <div class="hero-content">
+                <h1>Just Do It</h1>
+                <p>Move. Explore. Bring your dreams to life.</p>
+                <a href="#featured-products" class="cta-button" title="Shop Nike Collection">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured" id="featured-products" role="main">
+            <h2>Trending Now</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Nike Air Max Running Shoes"
+                         loading="lazy"
+                         width="800"
+                         height="600">
+                    <div class="product-info">
+                        <h3>Nike Air Max</h3>
+                        <p>Men's Running Shoes</p>
+                        <span>$129.99</span>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Nike ZoomX Women's Running Shoes"
+                         loading="lazy"
+                         width="800"
+                         height="600">
+                    <div class="product-info">
+                        <h3>Nike ZoomX</h3>
+                        <p>Women's Running Shoes</p>
+                        <span>$159.99</span>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Nike Air Force 1 Lifestyle Shoes"
+                         loading="lazy"
+                         width="800"
+                         height="600">
+                    <div class="product-info">
+                        <h3>Nike Air Force 1</h3>
+                        <p>Lifestyle Shoes</p>
+                        <span>$99.99</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>FIND A STORE</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" title="Find Nike Store Locations">Store Locator</a></li>
+                        <li><a href="#" title="Nike Retail Information">Nike Retail</a></li>
+                        <li><a href="#" title="Find Authorized Nike Retailers">Authorized Retailers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>GET HELP</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" title="Check Order Status">Order Status</a></li>
+                        <li><a href="#" title="Shipping & Delivery Information">Shipping & Delivery</a></li>
+                        <li><a href="#" title="Returns Policy">Returns</a></li>
+                        <li><a href="#" title="Payment Options">Payment Options</a></li>
+                        <li><a href="#" title="Contact Nike Support">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>ABOUT NIKE</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" title="Nike News">News</a></li>
+                        <li><a href="#" title="Careers at Nike">Careers</a></li>
+                        <li><a href="#" title="Investor Relations">Investors</a></li>
+                        <li><a href="#" title="Nike Sustainability">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Follow Nike on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow Nike on Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow Nike on Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow Nike on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#" title="Nike Guides">Guides</a>
+                    <a href="#" title="Terms of Sale">Terms of Sale</a>
+                    <a href="#" title="Terms of Use">Terms of Use</a>
+                    <a href="#" title="Privacy Policy">Privacy Policy</a>
+                </div>
+                <div>© 2024 Nike, Inc. All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

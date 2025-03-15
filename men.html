@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Nike Men's Collection - Find the latest men's shoes including Air Max, Air Force 1, running, basketball, and training shoes. Free shipping for Nike Members.">
+    <meta name="keywords" content="Nike men's shoes, Nike Air Max, Nike Air Force 1, basketball shoes, running shoes, training shoes">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Nike Men's Collection | Latest Shoes & Sneakers">
+    <meta property="og:description" content="Shop Nike Men's Collection - Find the latest men's shoes including Air Max, Air Force 1, running, basketball, and training shoes.">
+    <meta property="og:image" content="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/33533fe2-1157-4001-896e-1803b30659c8/air-force-1-07-mens-shoes-5QFp5Z.png">
+    <meta property="og:url" content="https://www.nike.com/mens-shoes">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://www.nike.com/mens-shoes">
+    <title>Nike Men's Collection | Latest Shoes & Sneakers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page-title {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #111;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .product-category {
+            font-size: 14px;
+            color: #757575;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .buy-button {
+            background: #111;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .buy-button:hover {
+            background: #367c39;
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filter-button {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-button:hover {
+            background: #367c39;
+            color: white;
+            border-color: #367c39;
+        }
+    </style>
+    <!-- Structured Data for Product List -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Nike Air Max 270",
+            "description": "Men's Shoes",
+            "brand": {
+              "@type": "Brand",
+              "name": "Nike"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": 160.00,
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Nike Air Force 1 '07",
+            "description": "Men's Shoes",
+            "brand": {
+              "@type": "Brand",
+              "name": "Nike"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": 110.00,
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+              
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Men's Collection</h1>
+            
+            <nav aria-label="Product Categories">
+                <div class="filters">
+                    <button class="filter-button" aria-label="Filter by Lifestyle shoes">Lifestyle</button>
+                    <button class="filter-button" aria-label="Filter by Running shoes">Running</button>
+                    <button class="filter-button" aria-label="Filter by Basketball shoes">Basketball</button>
+                    <button class="filter-button" aria-label="Filter by Training shoes">Training</button>
+                </div>
+            </nav>
+
+            <section class="products-grid" aria-label="Product Grid">
+                <article class="product-card">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b67c98af-ad3a-4846-a8e3-5d4c00d2bf78/AIR+MAX+270+GO+%28TD%29.png" 
+                         alt="Nike Air Max 270 - Men's Shoes in Black/White colorway"
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-name">Nike Air Max 270</h3>
+                        <p class="product-category">Men's Shoes</p>
+                        <p class="product-price" aria-label="Price: $160">$160</p>
+                        <button class="buy-button" aria-label="Add Nike Air Max 270 to shopping bag">Add to Bag</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/33533fe2-1157-4001-896e-1803b30659c8/air-force-1-07-mens-shoes-5QFp5Z.png" 
+                         alt="Nike Air Force 1 '07 - Classic White Men's Shoes"
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-name">Nike Air Force 1 '07</h3>
+                        <p class="product-category">Men's Shoes</p>
+                        <p class="product-price" aria-label="Price: $110">$110</p>
+                        <button class="buy-button" aria-label="Add Nike Air Force 1 '07 to shopping bag">Add to Bag</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a42a5d53-2f99-4e78-a081-9d07a2d0774a/air-zoom-pegasus-39-mens-road-running-shoes-WcRb6d.png" 
+                         alt="Nike Air Zoom Pegasus 39 - Men's Road Running Shoes"
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-name">Nike Air Zoom Pegasus 39</h3>
+                        <p class="product-category">Men's Running Shoes</p>
+                        <p class="product-price" aria-label="Price: $120">$120</p>
+                        <button class="buy-button" aria-label="Add Nike Air Zoom Pegasus 39 to shopping bag">Add to Bag</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dee37727-8559-47d8-96cb-0da84342c41f/LEBRON+XXI+SE+%28GS%29.png" 
+                         alt="Nike LeBron Witness 6 - Men's Basketball Shoes"
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-name">Nike LeBron Witness 6</h3>
+                        <p class="product-category">Basketball Shoes</p>
+                        <p class="product-price" aria-label="Price: $100">$100</p>
+                        <button class="buy-button" aria-label="Add Nike LeBron Witness 6 to shopping bag">Add to Bag</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/20677a8b-c230-4664-ba5a-ea8b0f0c4658/W+NIKE+FREE+METCON+6.png" 
+                         alt="Nike Metcon 8 - Men's Training Shoes"
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-name">Nike Metcon 8</h3>
+                        <p class="product-category">Men's Training Shoes</p>
+                        <p class="product-price" aria-label="Price: $130">$130</p>
+                        <button class="buy-button" aria-label="Add Nike Metcon 8 to shopping bag">Add to Bag</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-max-90-mens-shoes-6n3vKB.png" 
+                         alt="Nike Air Max 90 - Men's Shoes"
+                         loading="lazy">
+                    <div class="product-info">
+                        <h3 class="product-name">Nike Air Max 90</h3>
+                        <p class="product-category">Men's Shoes</p>
+                        <p class="product-price" aria-label="Price: $130">$130</p>
+                        <button class="buy-button" aria-label="Add Nike Air Max 90 to shopping bag">Add to Bag</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Nike. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

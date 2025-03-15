@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Nike Login | Sign In to Your Nike Account</title>
+    <meta name="title" content="Nike Login | Sign In to Your Nike Account">
+    <meta name="description" content="Sign in to your Nike account to access exclusive member benefits, track orders, and shop the latest athletic shoes, sportswear & accessories. Join Nike today.">
+    <meta name="keywords" content="Nike login, Nike sign in, Nike account, Nike membership, Nike member benefits">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nike.com/login">
+    <meta property="og:title" content="Nike Login | Sign In to Your Nike Account">
+    <meta property="og:description" content="Sign in to your Nike account to access exclusive member benefits, track orders, and shop the latest athletic shoes, sportswear & accessories. Join Nike today.">
+    <meta property="og:image" content="https://wallpapers.com/images/featured/cool-nike-g2tprt4w49a0ps3t.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.nike.com/login">
+    <meta property="twitter:title" content="Nike Login | Sign In to Your Nike Account">
+    <meta property="twitter:description" content="Sign in to your Nike account to access exclusive member benefits, track orders, and shop the latest athletic shoes, sportswear & accessories. Join Nike today.">
+    <meta property="twitter:image" content="https://wallpapers.com/images/featured/cool-nike-g2tprt4w49a0ps3t.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.nike.com/login">
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    
+    <style>
+        /* Previous CSS styles remain unchanged */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary-color: #00b894;
+            --hover-color: #00d8a6;
+            --text-color: #2d3436;
+            --light-gray: #f5f6fa;
+            --error-color: #ff4757;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://wallpapers.com/images/featured/cool-nike-g2tprt4w49a0ps3t.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 420px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 0px 20px rgba(0,184,148,0.2);
+            overflow: hidden;
+            animation: slideUp 0.6s ease;
+        }
+
+        .login-header {
+            padding: 40px;
+            text-align: center;
+            background: white;
+        }
+
+        .nike-logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .login-header h1 {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .login-header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .login-form {
+            padding: 0 40px 40px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(0,184,148,0.1);
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 25px;
+        }
+
+        .forgot-password a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-password a:hover {
+            color: var(--primary-color);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary-color);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .login-button:hover {
+            background: var(--hover-color);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,184,148,0.2);
+        }
+
+        .login-button:active {
+            transform: translateY(0);
+        }
+
+        .social-login {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-login p {
+            color: #666;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .social-login p::before,
+        .social-login p::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background: var(--light-gray);
+        }
+
+        .social-login p::before {
+            left: 0;
+        }
+
+        .social-login p::after {
+            right: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover img {
+            filter: brightness(0) invert(1);
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .signup-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .signup-link a:hover {
+            color: var(--hover-color);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                border-radius: 0;
+            }
+            .login-header,
+            .login-form {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Nike Login",
+      "description": "Sign in to your Nike account to access exclusive member benefits, track orders, and shop the latest athletic shoes, sportswear & accessories.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nike",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nike.com/favicon.ico"
+        }
+      },
+      "mainEntity": {
+        "@type": "WebSite",
+        "name": "Nike",
+        "url": "https://www.nike.com"
+      }
+    }
+    </script>
+</head>
+<body>
+    <main class="login-page" role="main">
+        <div class="login-container" itemscope itemtype="https://schema.org/WebPage">
+            <div class="login-header">
+                <img src="data:image/png;base64,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" 
+                     alt="Nike Logo" 
+                     class="nike-logo"
+                     width="60"
+                     height="60">
+                <h1>Welcome Back</h1>
+                <p>Enter your credentials to access your account</p>
+            </div>
+            
+            <form class="login-form" action="/login" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email"
+                           placeholder="your@email.com" 
+                           required
+                           aria-required="true"
+                           autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" 
+                           id="password" 
+                           name="password"
+                           placeholder="Enter your password" 
+                           required
+                           aria-required="true"
+                           autocomplete="current-password">
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="/forgot-password" title="Reset your password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="login-button">Sign In</button>
+                
+                <div class="social-login">
+                    <p>Or continue with</p>
+                    <div class="social-icons">
+                        <button type="button" class="social-icon" aria-label="Sign in with Google">
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" 
+                                 alt="Google"
+                                 width="24"
+                                 height="24">
+                        </button>
+                        <button type="button" class="social-icon" aria-label="Sign in with Facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" 
+                                 alt="Facebook"
+                                 width="24"
+                                 height="24">
+                        </button>
+                        <button type="button" class="social-icon" aria-label="Sign in with Twitter">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" 
+                                 alt="Twitter"
+                                 width="24"
+                                 height="24">
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="signup-link">
+                    Don't have an account? <a href="/signup" title="Create a Nike account">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
